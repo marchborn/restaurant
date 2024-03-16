@@ -1,0 +1,21 @@
+.about-restaurant {
+    background-color: #fafafa; /* Light background to make the section stand out */
+    padding: 40px 20px; /* Add some padding for spacing */
+    margin: 20px 0; /* Space above and below the section */
+}
+
+.about-heading {
+    font-family: 'Merriweather', serif; /* A fancy, readable font */
+    color: #2a2a2a; /* Dark color for contrast */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Space between the heading and the paragraph */
+    font-size: 2.5rem; /* Slightly larger font size for the heading */
+}
+
+.about-restaurant p {
+    font-family: 'Open Sans', sans-serif; /* A clean, simple font for readability */
+    color: #555; /* Slightly lighter color for the text */
+    line-height: 1.6; /* Improve line spacing for readability */
+    text-align: justify; /* Justify text for a neat look */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
