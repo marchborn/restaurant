@@ -13,9 +13,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 
-const settings = ['Profile', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Feedback', 'Logout'];
 
-function Navbar() {
+const Navbar = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenUserMenu = (event) => {
@@ -33,9 +33,6 @@ function Navbar() {
           <RestaurantMenuIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'white' }} />
           <Typography
             variant="h6"
-            noWrap
-            component={RouterLink}
-            to="/" 
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -51,8 +48,6 @@ function Navbar() {
 
           <Typography
             variant="h5"
-            noWrap
-            component="a"
             href="#responsive-app-bar"
             sx={{
               flexGrow: 1,
@@ -71,18 +66,27 @@ function Navbar() {
           
           <Button
             component={RouterLink}
-            to="/login" // Path to the login page
+            to="/login" 
             sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold' }}
           >
             Login
           </Button>
           <Button
             component={RouterLink}
-            to="/signup" // Path to the signup page
+            to="/signup" 
             sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold' }}
           >
             Signup
           </Button>
+
+          <Button
+            component={RouterLink}
+            to="/cart" 
+            sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold' }}
+          >
+            Cart
+          </Button>
+
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

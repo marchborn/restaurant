@@ -1,21 +1,116 @@
 .about-restaurant {
-    background-color: #fafafa; /* Light background to make the section stand out */
-    padding: 40px 20px; /* Add some padding for spacing */
-    margin: 20px 0; /* Space above and below the section */
+    background-color: #fafafa; 
+    padding: 40px 20px; 
+    margin: 20px 0; 
 }
 
 .about-heading {
-    font-family: 'Merriweather', serif; /* A fancy, readable font */
-    color: #2a2a2a; /* Dark color for contrast */
-    text-align: center; /* Center align the heading */
-    margin-bottom: 20px; /* Space between the heading and the paragraph */
-    font-size: 2.5rem; /* Slightly larger font size for the heading */
+    font-family: 'Merriweather', serif; 
+    color: #2a2a2a; 
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
 }
 
 .about-restaurant p {
-    font-family: 'Open Sans', sans-serif; /* A clean, simple font for readability */
-    color: #555; /* Slightly lighter color for the text */
-    line-height: 1.6; /* Improve line spacing for readability */
-    text-align: justify; /* Justify text for a neat look */
-    margin-bottom: 15px; /* Space between paragraphs */
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
 }
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.dishes .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+
+
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+.dishes .box-container .box .fa-eye{
+    left: -15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+.dishes .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+.dishes .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+    padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+
+.dishes .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+.feedback-section {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+  }
+  
+  
+  .site-footer {
+    padding: 20px 0;
+    background-color: #84848494;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
